@@ -1,0 +1,31 @@
+.inbox-index .table td{
+    padding: 0.2rem;
+}
+.outbox-index .table td{
+    padding: 0.2rem;
+}
+#phrases p{
+    margin: 2px 4px;
+}
+#phrases p:hover{
+    cursor: pointer;
+    background-color: #ddd;
+}
+/* my */
+.user-panel img {
+    width: 4rem;
+    padding-left: 0;
+}
+.img-circle {
+    border-radius: 10%;
+}
+.user-panel, .user-panel .info {
+    white-space: unset;
+    font-size: 0.8rem;
+}
+.inbox-message-index .table td{
+    padding: 0.2rem;
+}
+.outbox-message-index .table td{
+    padding: 0.2rem;
+}
