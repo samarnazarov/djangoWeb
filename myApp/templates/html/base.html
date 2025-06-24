@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- saved from url=(0216)file:///D:/My%20Projects/PYTHON%20Projects/djangoWeb/Others/%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C%20%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20C%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5.html -->
+<html lang="ru" style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Создать Свободное Cообщение</title>
+    <meta name="csrf-param" content="_csrf-frontend">
+<meta name="csrf-token" content="q0yTFAyeCZ74c1Ozeh1h2r9-riAgtKC-eloJjo_oBB7GKtJkf6ZDy7k3Ef8IdQOb-E78VnSH7fQibkfgv5lSdg==">
+
+<link href="css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet">
+<link href="kv-tree.css" rel="stylesheet">
+<link href="bootstrap-dialog-bs4.css" rel="stylesheet">
+<link href="kv-widgets.css" rel="stylesheet">
+<link href="kv-tree-input.css" rel="stylesheet">
+<link href="bootstrap-icons.min.css" rel="stylesheet">
+<link href="fileinput.css" rel="stylesheet">
+<link href="all.min.css" rel="stylesheet">
+<link href="adminlte.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link href="language-picker.min.css" rel="stylesheet">
+<link href="flags-small.min.css" rel="stylesheet">
+<script src="dialog.js.загрузка"></script>
+<script>var krajeeDialogDefaults_d92bf583 = {"alert":{"type":"type-info","title":"Информация","buttonLabel":"<span class=\"fas fa-check\"></span> Ok"},"confirm":{"type":"type-warning","title":"Подтверждение","btnOKClass":"btn-warning","btnOKLabel":"<span class=\"fas fa-check\"></span> Ok","btnCancelLabel":"<span class=\"fas fa-ban\"></span>  Отмена"},"prompt":{"draggable":false,"title":"Информация","buttons":[{"label":"Отмена","icon":"fas fa-ban","cssClass":"btn-outline-secondary"},{"label":"Ok","icon":"fas fa-check","cssClass":"btn-primary"}],"closable":false},"dialog":{"draggable":true,"title":"Информация","buttons":[{"label":"Отмена","icon":"fas fa-ban","cssClass":"btn-outline-secondary"},{"label":"Ok","icon":"fas fa-check","cssClass":"btn-primary"}]}};
+var krajeeDialog_6d7f2d25 = {"id":"w2"};
+var krajeeDialog=new KrajeeDialog(true,krajeeDialog_6d7f2d25,krajeeDialogDefaults_d92bf583);
+window.treeview_56d452f8 = {"dialogLib":"krajeeDialog","hideCssClass":"d-none","treeId":"w1-tree","detailId":"w1-detail","toolbarId":"w1-toolbar","wrapperId":"w1-wrapper","actions":{"manage":"\/ru\/treemanager\/node\/manage","save":"\/ru\/treemanager\/node\/save","remove":"\/ru\/treemanager\/node\/remove","move":"\/ru\/treemanager\/node\/move"},"modelClass":"common\\models\\Berth","formAction":"\/ru\/treemanager\/node\/save","formOptions":{"id":"w1-nodeform"},"currUrl":"\/ru\/outbox-message\/create","messages":{"invalidCreateNode":"Нельзя создать Элемент. Родительский Элемент не сохранен","emptyNode":"(новый)","removeNode":"Вы действительно хотите удалить Элемент?","nodeRemoved":"Элемент успешно удален.","nodeRemoveError":"Ошибка при удалении Элемент. Пожалуйста, повторите попытку позже.","nodeNewMove":"Нельзя переместить Элемент пока вы его не сохранили","nodeTop":"Элемент уже находится в самом верху иерархии","nodeBottom":"Элемент уже находится в самом низу иерархии","nodeLeft":"Элемент уже находится на самом верхнем уровне иерархии","nodeRight":"Элемент уже находится в самом последнем уровне иерархии","emptyNodeRemoved":"Элементы без названия были удалены","selectNode":"Выберите Элемент, нажав на один из дерева.","noChildAllowed":"Вы не можете добавить дочерний элемент в корневой Элемент ","nodeTitle":"Элемент","nodeTitlePlural":"Элементов"},"alertFadeDuration":1000,"enableCache":true,"cacheTimeout":300000,"showTooltips":true,"isAdmin":false,"showInactive":false,"softDelete":true,"iconsListShow":"text","iconsList":null,"showFormButtons":true,"showIDAttribute":true,"showNameAttribute":true,"nodeView":"@kvtree\/views\/_form","nodeAddlViews":{"1":"","2":"","3":"","4":"","5":""},"nodeViewParams":"a:0:{}","nodeViewButtonLabels":{"submit":"\u003Ci class=\u0022fas fa-save\u0022\u003E\u003C\/i\u003E","reset":"\u003Ci class=\u0022fas fa-redo\u0022\u003E\u003C\/i\u003E"},"nodeSelected":"w1-nodesel","defaultBtnCss":"btn-outline-secondary","noNodesMessage":"\u003Cdiv class=\u0022kv-node-message\u0022\u003EНет доступных Элементов для отображения. Используйте тулбар для добавлния новых Элементов\u003C\/div\u003E","breadcrumbs":{"depth":"","glue":" \u0026raquo; ","activeCss":"kv-crumb-active","untitled":"Без названия"},"multiple":true,"cascadeSelectChildren":true,"allowNewRoots":true,"hideUnmatchedSearchItems":true,"rootKey":"KRAJEE~!~ROOT~!~NODE"};
+
+var treeinput_e3707495={"treeId":"w1-tree","inputId":"w1-tree-input","dropdownId":"w1-tree-input-menu","placeholder":"<span class=\"kv-placeholder\">Выбрать...</span>","value":"","caret":"<div class=\"kv-carets\"><span class=\"kv-dn\"><i class=\"fas fa-caret-down\"></i></span><span class=\"kv-up\"><i class=\"fas fa-caret-up\"></i></span></div>","autoCloseOnSelect":true};
+window.fileinput_1ae1535d = {"showCaption":true,"showRemove":false,"showUpload":false,"browseClass":"btn btn-primary btn-block","browseIcon":"\u003Ci class=\u0022glyphicon glyphicon-camera\u0022\u003E\u003C\/i\u003E ","allowedFileExtensions":["pdf","doc","docx","xls","xlsx","jpg","png","tiff","txt"],"maxFileSize":5120,"template":"{error}","initialPreview":"","initialPreviewAsData":true,"initialPreviewConfig":"","maxFileCount":10,"language":"ru","resizeImage":false,"autoOrientImage":true};
+</script></head>
+<body class="sidebar-mini" style="height: auto;">
+
+<div class="wrapper">
+    <!-- Navbar -->
+    <!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a id="dropdownSubMenu1" href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Новый документ</a>
+            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                <li><a href="http://docflow.qizilqumsement.uz/outbox/create" class="dropdown-item">Создать Документ</a></li>
+                <li><a href="http://docflow.qizilqumsement.uz/outbox-message/create" class="dropdown-item">Создать Свободное сообщение</a></li>
+                <!-- End Level two -->
+            </ul>
+        </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+   <!-- <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+            <input class="form-control form-control-navbar" type="search" placeholder="" aria-label="Search">
+            <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>-->
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+
+        <!-- Messages Dropdown Menu -->
+
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#">
+                <i class="far fa-bell"></i>
+                <span class="badge badge-warning navbar-badge">0</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <span class="dropdown-header">0 Notifications</span>
+                <div class="dropdown-divider"></div>
+                <a href="http://docflow.qizilqumsement.uz/ru/inbox" class="dropdown-item dropdown-footer">Посмотреть все</a>
+            </div>
+        </li>
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+            <a id="language" href="http://docflow.qizilqumsement.uz/ru/outbox-message/create" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Русский</a><ul aria-labelledby="language" class="dropdown-menu border-0 shadow"><li><a href="http://docflow.qizilqumsement.uz/uz/outbox-message/create" title="uz" class="dropdown-item">O‘zbekcha</a></li><li><a href="http://docflow.qizilqumsement.uz/uzk/outbox-message/create" title="uzk" class="dropdown-item">Ўзбекча</a></li><li><a href="http://docflow.qizilqumsement.uz/en/outbox-message/create" title="en" class="dropdown-item">English</a></li></ul>        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="http://docflow.qizilqumsement.uz/ru/site/logout" data-method="post"><i class="fas fa-sign-out-alt"></i></a>        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#" role="button">
+                <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#" role="button">
+                <i class="fas fa-th-large"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!-- /.navbar -->    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="http://docflow.qizilqumsement.uz/" class="brand-link">
+        <img src="./1_files/AdminLTELogo.png" alt="User Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">ЭДО</span>
+    </a>
+
+    <!-- Sidebar -->
+        <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                                    <img src="./1_files/730003.jpg" class="img-circle elevation-2" alt="User Image">
+
+            </div>
+            <div class="info">
+                <a href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#" class="d-block">Назаров Самариддин Бахриддинович</a>
+                <a href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#" class="d-block">Инженер-программист</a>
+            </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <!-- href be escaped -->
+        <!-- <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+                <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                        <i class="fas fa-search fa-fw"></i>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="true"><li class="nav-header">ДОКУМЕНТООБОРОТ</li>
+<li class="nav-item has-treeview"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#"><i class="nav-icon fas fa-book"></i> <p>Документы <i class="right fas fa-angle-left"></i> </p></a>
+<ul class="nav nav-treeview">
+<li class="nav-item"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/inbox"><i class="nav-icon fas fa-inbox"></i> <p>Входящие  </p></a></li>
+<li class="nav-item"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/outbox"><i class="nav-icon fas fa-envelope"></i> <p>Отправлено  </p></a></li>
+</ul>
+</li>
+<li class="nav-item has-treeview"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#"><i class="nav-icon fas fa-book"></i> <p>Сообщения <i class="right fas fa-angle-left"></i> </p></a>
+<ul class="nav nav-treeview">
+<li class="nav-item"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/inbox-message"><i class="nav-icon fas fa-inbox"></i> <p>Входящие  </p></a></li>
+<li class="nav-item"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/outbox-message"><i class="nav-icon fas fa-envelope"></i> <p>Отправлено  </p></a></li>
+</ul>
+</li>
+<li class="nav-item has-treeview"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/outbox-message/create#"><i class="nav-icon fas fa-cog"></i> <p>Система <i class="right fas fa-angle-left"></i> </p></a>
+<ul class="nav nav-treeview">
+<li class="nav-item"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/user"><i class="nav-icon fas fa-user"></i> <p>Профиль  </p></a></li>
+<li class="nav-item"><a class="nav-link " href="http://docflow.qizilqumsement.uz/ru/login-history"><i class="nav-icon fas fa-history"></i> <p>История входа  </p></a></li>
+</ul>
+</li></ul>        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 815px;">
+    <!-- Content Header (Page header) -->
+
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+
+    <!-- /.content -->
+</div>    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark" style="display: none;">
+    <!-- Control sidebar content goes here -->
+<div class="p-3 control-sidebar-content" style=""><h5>Customize AdminLTE</h5><hr class="mb-2"><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div><h6>Header Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No Border</span></div><h6>Sidebar Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Nav Flat Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span></div><h6>Footer Options</h6><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div></div><div class="p-3 control-sidebar-content" style=""><h5>Customize AdminLTE</h5><hr class="mb-2"><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div><h6>Header Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No Border</span></div><h6>Sidebar Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Nav Flat Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span></div><h6>Footer Options</h6><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div></div></aside>
+<!-- /.control-sidebar -->    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+    <strong>Copyright © 2022
+    Все права защищены.
+    <div class="float-right d-none d-sm-inline-block">
+
+    </div>
+</strong></footer><div id="sidebar-overlay"></div></div><strong>
+
+<script src="jquery.js.загрузка"></script>
+<script src=".yii.js.загрузка"></script>
+<script src=".yii.validation.js.загрузка"></script>
+<script src="yii.activeForm.js.загрузка"></script>
+<script src="kv-tree.js.загрузка"></script>
+<script src="bootstrap.bundle.js.загрузка"></script>
+<script src="bootstrap-dialog.js.загрузка"></script>
+<script src="dialog-yii.js.загрузка"></script>
+<script src="kv-widgets.js.загрузка"></script>
+<script src="kv-tree-input.js.загрузка"></script>
+<script src="buffer.js.загрузка"></script>
+<script src="filetype.js.загрузка"></script>
+<script src="piexif.js.загрузка"></script>
+<script src="sortable.js.загрузка"></script>
+<script src="fileinput.js.загрузка"></script>
+<script src="ru.js.загрузка"></script>
+<script src="adminlte.min.js.загрузка"></script>
+<script src="control_sidebar.js.загрузка"></script>
+<script src="script.js.загрузка"></script>
+<script src="language-picker.min.js.загрузка"></script>
+<script>jQuery(function ($) {
+krajeeYiiConfirm('krajeeDialog');
+jQuery&&jQuery.pjax&&(jQuery.pjax.defaults.maxCacheLength=0);
+
+jQuery('#w1').treeview(treeview_56d452f8);
+
+jQuery('#w1').treeinput(treeinput_e3707495);
+if (jQuery('#outboxmessage-attachment').data('fileinput')) { jQuery('#outboxmessage-attachment').fileinput('destroy'); }
+jQuery('#outboxmessage-attachment').fileinput(fileinput_1ae1535d);
+
+jQuery('#w0').yiiActiveForm([{"id":"outboxmessage-subject","name":"subject","container":".field-outboxmessage-subject","input":"#outboxmessage-subject","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Тема сообщения»."});yii.validation.string(value, messages, {"message":"Значение «Тема сообщения» должно быть строкой.","max":255,"tooLong":"Значение «Тема сообщения» должно содержать максимум 255 символа.","skipOnEmpty":1});}},{"id":"outboxmessage-text","name":"text","container":".field-outboxmessage-text","input":"#outboxmessage-text","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Текст сообщения» должно быть строкой.","skipOnEmpty":1});}},{"id":"outboxmessage-doc_to_local","name":"doc_to_local","container":".field-outboxmessage-doc_to_local","input":"#outboxmessage-doc_to_local","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Получатель»."});yii.validation.string(value, messages, {"message":"Значение «Получатель» должно быть строкой.","skipOnEmpty":1});}},{"id":"outboxmessage-doc_date","name":"doc_date","container":".field-outboxmessage-doc_date","input":"#outboxmessage-doc_date","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Дата»."});}},{"id":"outboxmessage-attachment","name":"attachment[]","container":".field-outboxmessage-attachment","input":"#outboxmessage-attachment","validate":function (attribute, value, messages, deferred, $form) {yii.validation.file(attribute, messages, {"message":"Загрузка файла не удалась.","skipOnEmpty":true,"mimeTypes":[],"wrongMimeType":"Разрешена загрузка файлов только со следующими MIME-типами: .","extensions":[],"wrongExtension":"Разрешена загрузка файлов только со следующими расширениями: .","maxFiles":10,"tooMany":"Вы не можете загружать более 10 файла."});}}], []);
+});</script>
+
+</strong><div id="kvFileinputModal" class="file-zoom-dialog modal fade" aria-labelledby="kvFileinputModalLabel" tabindex="-1"><div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header kv-zoom-header">
+      <h6 class="modal-title kv-zoom-title" id="kvFileinputModalLabel"><span class="kv-zoom-caption"></span> <span class="kv-zoom-size"></span></h6>
+      <div class="kv-zoom-actions"><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-rotate" title="Rotate 90 deg. clockwise"><i class="bi-arrow-clockwise"></i></button><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-toggleheader" title="Переключить заголовок" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="bi-arrows-expand"></i></button><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-fullscreen" title="Переключить полноэкранный режим" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="bi-arrows-fullscreen"></i></button><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-borderless" title="Переключить режим без полей" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="bi-arrows-angle-expand"></i></button><button type="button" class="btn btn-sm btn-kv btn-default btn-outline-secondary btn-kv-close" title="Закрыть подробный предпросмотр" data-dismiss="modal" aria-hidden="true"><i class="bi-x-lg"></i></button></div>
+    </div>
+    <div class="floating-buttons"></div>
+    <div class="kv-zoom-body file-zoom-content krajee-default"></div>
+<button type="button" class="btn btn-default btn-outline-secondary btn-navigate btn-kv-prev" title="Посмотреть предыдущий файл"><i class="bi-chevron-left"></i></button> <button type="button" class="btn btn-default btn-outline-secondary btn-navigate btn-kv-next" title="Посмотреть следующий файл"><i class="bi-chevron-right"></i></button>
+    <div class="kv-zoom-description"></div>
+  </div>
+</div>
+</div></body></html>
